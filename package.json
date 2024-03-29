@@ -1,6 +1,6 @@
 {
-  "name": "atm",
-  "version": "1.0.0",
+  "name": "atm-syedabdullahzaidi",
+  "version": "2.0.0",
   "description": "This is a simple atm system",
   "main": "index.js",
   "type": "module",
