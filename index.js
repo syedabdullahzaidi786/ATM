@@ -9,13 +9,21 @@ const padding = Math.floor((terminalWidth - welcomeMessage.length) / 2);
 const centeredMessage = " ".repeat(padding) + welcomeMessage;
 // Output the centered and styled message
 console.log(centeredMessage);
+let myaccountNumber = 123456789;
 let myBalance = 520000;
 let myPin = 1234;
+const accountNumberAnswer = await inquirer.prompt([
+    {
+        name: "accountNumber",
+        message: "\x1b[37m Enter Your Account Number:",
+        type: "number",
+    }
+]);
 let pinAnswer = await inquirer.prompt([
     {
         name: "pin",
         message: "\x1b[37m Enter Your Pin Number:",
-        type: "number"
+        type: "number",
     }
 ]);
 if (pinAnswer.pin === myPin) {

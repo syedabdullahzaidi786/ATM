@@ -1,6 +1,6 @@
 {
   "name": "atm-syedabdullahzaidi",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "This is a colorfull simple atm system",
   "main": "index.js",
   "type": "module",
