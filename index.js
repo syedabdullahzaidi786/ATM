@@ -9,10 +9,10 @@ const padding = Math.floor((terminalWidth - welcomeMessage.length) / 2);
 const centeredMessage = " ".repeat(padding) + welcomeMessage;
 // Output the centered and styled message
 console.log(centeredMessage);
-let myaccountNumber = 123456789;
+let myAccountNumber = 123456789;
 let myBalance = 520000;
 let myPin = 1234;
-const accountNumberAnswer = await inquirer.prompt([
+let accountAnswer = await inquirer.prompt([
     {
         name: "accountNumber",
         message: "\x1b[37m Enter Your Account Number:",
@@ -26,7 +26,7 @@ let pinAnswer = await inquirer.prompt([
         type: "number",
     }
 ]);
-if (pinAnswer.pin === myPin) {
+if (accountAnswer.accountNumber === myAccountNumber && pinAnswer.pin === myPin) {
     console.log("\x1b[32m Access Granted!!");
     const welcomeeMessage = chalk.bold("\x1b[33m Welcome Syed Abdullah Zaidi");
     const terminallWidth = process.stdout.columns;

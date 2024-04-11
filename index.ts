@@ -14,7 +14,7 @@ const centeredMessage = " ".repeat(padding) + welcomeMessage;
 // Output the centered and styled message
 console.log(centeredMessage);
 
-let myaccountNumber = 123456789;
+let myAccountNumber = 123456789;
 let myBalance = 520000;
 let myPin = 1234;
 
@@ -34,7 +34,7 @@ let pinAnswer = await inquirer.prompt(
         }
     ]
 );
-if(pinAnswer.pin === myPin){
+if(accountAnswer.accountNumber === myAccountNumber && pinAnswer.pin === myPin){
     console.log("\x1b[32m Access Granted!!");
 const welcomeeMessage = chalk.bold("\x1b[33m Welcome Syed Abdullah Zaidi");
 const terminallWidth = process.stdout.columns;
